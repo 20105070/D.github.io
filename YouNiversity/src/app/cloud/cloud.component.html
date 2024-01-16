@@ -1,0 +1,45 @@
+<!--cloud.component.html - Daniel Syrén (20105070)-->
+<html>
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cloud</title>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <div class="flex">
+        <div class="navOff">
+            <a href="/Country">Country</a>
+        </div>
+        <div class="navOff">
+            <a href="/City">City</a>
+        </div>
+        <div class="navOn">
+            <a href="/Cloud">Cloud</a>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--Load Bar-->
+    <div class="flexBar">
+        <button (click)="load()">LOAD</button>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--University Containers-->
+    <div class="container" *ngFor="let university of universities">
+        <div style='height:50px;'>
+            <a href='{{university.webPage}}' target='_blank' style='background-color:#00FF00;'>{{university.name}}</a>
+            <button (click)="delete(university.name)">DELETE</button>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+</body>
+
+</html>

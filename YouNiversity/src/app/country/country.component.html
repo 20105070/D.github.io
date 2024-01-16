@@ -1,0 +1,54 @@
+<!--country.component.html - Daniel Syrén (20105070)-->
+<html>
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Country</title>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <div class="flex">
+        <div class="navOn">
+            <a href="/Country">Country</a>
+        </div>
+        <div class="navOff">
+            <a href="/City">City</a>
+        </div>
+        <div class="navOff">
+            <a href="/Cloud">Cloud</a>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--Search Bar-->
+    <div class="flexBar">
+        <input type="text" placeholder="Enter a country..." [(ngModel)]="country" />
+        <button (click)="searchO()">SEARCH</button>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--University Containers-->
+    <div class="container" *ngFor="let university of universities">
+        <div style='height:50px;'>
+            <a href='{{university.webPage}}' target='_blank' style='background-color:#00FF00;'>{{university.name}}</a>
+            <button (click)="save(university)">SAVE</button>
+        </div>
+    </div>
+
+    <!--Country Containers-->
+    <div id="countries" *ngIf="displayCountries">
+        <div style="background-color:#00FF00;">{{country1}}</div>
+        <div style="background-color:#00FF00;">{{country2}}</div>
+        <div style="background-color:#00FF00;">{{country3}}</div>
+        <div style="background-color:#00FF00;">{{country4}}</div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+</body>
+
+</html>

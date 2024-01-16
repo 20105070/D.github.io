@@ -1,0 +1,84 @@
+/*styles.css - Daniel Syrén (20105070)*/
+
+/*#c Styling*/
+#c {
+    /*https://www.pexels.com/photo/black-textile-41949/*/
+    background-image: url('./assets/images/c.jpg');
+    background-size: 100%;
+    color: #6f2da8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*#cities Styling*/
+#cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+/*.container Styling*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*#countries Styling*/
+#countries {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+/*.flex Styling*/
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*.flexBar Styling*/
+.flexBar {
+    text-align: center;
+}
+
+/*.navOff Styling*/
+.navOff {
+    background-color: #FFFFFF;
+    font-size: 2em;
+    font-weight: bold
+}
+
+/*.navOff:active Styling*/
+.navOff:active {
+    transform: scale(0.96);
+}
+
+/*.navOff:hover Styling*/
+.navOff:hover {
+    background-color: #00FF00
+}
+
+/*.navOn Styling*/
+.navOn {
+    background-color: #00FF00;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*.navOn:active Styling*/
+.navOn:active {
+    transform: scale(0.96);
+}
